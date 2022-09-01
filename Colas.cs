@@ -6,7 +6,7 @@ public class Colas<E>
 {
     public List<E> cola;
     private int FIRST_ELEMENT = 0;
-    public Colas() { }
+    
     public Colas(List<E> cola) { this.cola = cola; }
 
     public void PutElement(E element) { this.cola.Add(element); } // Coloca un elemento en la cola

@@ -3,7 +3,6 @@
 public class Pila<E> : Colas<E> 
 {
 
-    public Pila(){}
     public Pila(List<E> cola) : base(cola) {}
 
     public override void Remove() {
