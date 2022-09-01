@@ -40,8 +40,8 @@ public class Colas<E>
         }
         catch(Exception e)
         {
-            Console.WriteLine(e.Message);
-            Console.WriteLine("Element not found, returning first element instead");
+            Console.WriteLine("\t"+e.Message);
+            Console.WriteLine("\tElement not found, returning first element instead [" + cola[FIRST_ELEMENT] + "]");
             return cola[FIRST_ELEMENT] ;
         }
         
