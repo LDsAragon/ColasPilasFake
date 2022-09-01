@@ -7,7 +7,8 @@ public class Runer_class
 {
     private static void Main(string[] args)
     {
-         Colas<String> colasy789 = new Colas<String>(new List<String> { "Hola", "Mundo" });
+        
+        // EJEMPLO DE COLAS STRING  
         
         List<String> listaPrueba = new List<String> { "Hola", "Mundo" };
 
@@ -40,9 +41,7 @@ public class Runer_class
 
         Console.WriteLine("GetEnumerator " + colas.GetEnumerator(3));
 
-        
-
-
+        // EJEMPLO DE COLAS INT 
 
         List<int> listaInt = new List<int> { 666, 42 };
 
@@ -53,6 +52,20 @@ public class Runer_class
         colaINT.PutElement(78);
 
         Console.WriteLine(colaINT.getCSV());
+        
+
+        // EJEMPLO DE PILAS STRING
+
+        Pila<String> coolPila = new Pila<String>(new List<String> { "Hola", "Mundo" });
+        Console.WriteLine(coolPila.getCSV() );
+
+        coolPila.Remove();
+
+        Console.WriteLine(coolPila.getCSV());
+
+        coolPila.PutElement("Arturo");
+
+        Console.WriteLine(coolPila.getCSV());
 
 
     }

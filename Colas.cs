@@ -2,16 +2,16 @@
 using System.Xml.Linq;
 using System;
 
-internal class Colas<E>
+public class Colas<E>
 {
-    private List<E> cola;
+    public List<E> cola;
     private int FIRST_ELEMENT = 0;
     public Colas() { }
     public Colas(List<E> cola) { this.cola = cola; }
 
     public void PutElement(E element) { this.cola.Add(element); } // Coloca un elemento en la cola
 
-    public void Remove() { this.cola.RemoveAt( FIRST_ELEMENT ); } // Remueve el primer elemento de la cola
+    public virtual void Remove() { this.cola.RemoveAt( FIRST_ELEMENT ); } // Remueve el primer elemento de la cola
     
     public E Peek() { return cola[FIRST_ELEMENT]; } //Peek: mira el valor de la cabeza pero sin extraer.
     public void Clear() { this.cola = new List<E>(); } //Clear: borra todo el contenido de la cola.
@@ -47,7 +47,7 @@ internal class Colas<E>
         
     } //GetEnumerator: permite usar enumeradores para recorrer la pila.
     public int Count() { return cola.Count(); } //Count: indica cuantos elementos contiene.
-    public E GetElement()  // retorna el primer elemento de la cola y lo remueve
+    public virtual E GetElement()  // retorna el primer elemento de la cola y lo remueve
     {
         E result = this.cola[FIRST_ELEMENT];
         this.cola.RemoveAt(FIRST_ELEMENT);
