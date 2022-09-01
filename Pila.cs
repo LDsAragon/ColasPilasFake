@@ -3,12 +3,8 @@
 public class Pila<E> : Colas<E> 
 {
 
-    //private List<E> pila;
-
     public Pila(){}
-    public Pila(List<E> cola) : base(cola) {
-      //  pila = cola;
-    }
+    public Pila(List<E> cola) : base(cola) {}
 
     public override void Remove() {
         int LAST_ELEMENT = (cola.Count() - 1);
