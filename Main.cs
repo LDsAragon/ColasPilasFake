@@ -7,7 +7,7 @@ public class Runer_class
 {
     private static void Main(string[] args)
     {
-        // Colas colas = new Colas(new List<String> { "Hola", "Mundo" });
+         Colas<String> colasy789 = new Colas<String>(new List<String> { "Hola", "Mundo" });
         
         List<String> listaPrueba = new List<String> { "Hola", "Mundo" };
 

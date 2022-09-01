@@ -12,6 +12,7 @@ internal class Colas<E>
     public void PutElement(E element) { this.cola.Add(element); }
 
     public void Remove() { this.cola.RemoveAt( FIRST_ELEMENT ); }
+    
     public E Peek() { return cola[FIRST_ELEMENT]; } //Peek: mira el valor de la cabeza pero sin extraer.
     public void Clear() { this.cola = new List<E>(); } //Clear: borra todo el contenido de la cola.
     public bool Contains(E searcher) { return cola.Contains(searcher); } //Contains: indica si un cierto elemento está en la cola.
